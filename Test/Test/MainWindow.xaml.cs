@@ -54,7 +54,7 @@ namespace Test
                 case "SaveAs...":
                     {
                         TempValueFromDB.Bytes = Encoding.UTF8.GetBytes(myTextBox.Text);
-                        SaveWindow saveWindow = new SaveWindow();
+                        SaveWindow saveWindow = new SaveWindow(TempValueFromDB.FileName);
                         saveWindow.ShowDialog();
                     }
                     break;

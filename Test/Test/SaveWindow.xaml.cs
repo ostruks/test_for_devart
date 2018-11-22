@@ -12,6 +12,11 @@ namespace Test
     public partial class SaveWindow : Window
     {
         delegate void ParametrizedMethodInvoker();
+        public SaveWindow(String fileName)
+        {
+            InitializeComponent();
+            saveTextBox.Text = fileName;
+        }
         public SaveWindow()
         {
             InitializeComponent();
